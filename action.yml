@@ -77,7 +77,7 @@ runs:
 
     # STORE THE BUILD
     - name: Store the build
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ${{ env.artifact_name }}
         path: ${{ inputs.build-location }}
