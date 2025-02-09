@@ -30,7 +30,7 @@ runs:
   steps:
     - name: Checkout Repository
       if: ${{ inputs.do-checkout == 'true' }}
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: get-date
       run: echo "date=$(date +'%Y-%m-%d--%H-%M-%S')" >> $GITHUB_ENV
       shell: bash
